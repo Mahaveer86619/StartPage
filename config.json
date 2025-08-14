@@ -5,7 +5,7 @@
   "disableSearchBar": false,
   "linkInNewTab": true,
   "settingsIcon": true,
-  "disable24Hour": false,
+  "disable24Hour": true,
   "timeZone": "Asia/Calcutta",
   "greeting": {
     "name": "Mahaveer",

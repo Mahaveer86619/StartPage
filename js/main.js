@@ -95,7 +95,11 @@ function updateTime() {
             hour: 'numeric',
             minute: 'numeric',
             hour12: disable24Hour,
-            timeZone: timeZ
+    }
+    try {
+    finalDate = currentDate.toLocaleString(undefined, options)
+    } catch (error) {
+        options.timeZone = timeZ
     }
     finalDate = currentDate.toLocaleString(undefined, options)
     document.getElementById(dateId).textContent = finalDate

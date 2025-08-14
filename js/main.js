@@ -1,6 +1,27 @@
-window.onload = function() {
-    this.initBody();
-}
+window.addEventListener('load', () => {
+    // Check if the message element exists
+    const messageElement = document.getElementById('message');
+    if (messageElement) {
+        // Set the message text
+        document.getElementById('message-text').innerText = config.message;
+    }
+
+    // Set the date text
+    document.getElementById('date-text').innerText = new Date().toDateString();
+
+    // Render the websites
+    renderWebsites();
+
+    // Render other content
+    renderOtherContent();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        event.preventDefault();
+        document.getElementById('search-bar-input').focus();
+    }
+});
 
 debug = false; // Enable while testing on local
 searchBarDivId = "search-bar"

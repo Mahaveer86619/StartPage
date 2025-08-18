@@ -1,15 +1,11 @@
 {
-  "title": "Axiom",
-  "disableMessage": false,
-  "disableDate": false,
-  "disableSearchBar": false,
-  "linkInNewTab": true,
-  "settingsIcon": true,
-  "disable24Hour": true,
-  "timeZone": "Asia/Calcutta",
-  "greeting": {
-    "name": "Mahaveer",
-    "typewriter": true
+  "user": {
+    "name": "Mahaveer"
+  },
+  "preferences": {
+    "show_date": true,
+    "show_message": true,
+    "typewriter_animation": true
   },
   "websites": [
     {
